@@ -19,17 +19,16 @@ This custom NVIDIA 390x driver enables simultaneous operation of P106-100 mining
   - All manufacturers (MSI, ASUS, Gigabyte, etc.)
 
 ### Display GPU (Required for video output)
-- **GT 610** (recommended)
+- **GT 610** (tested)
 - **GT 710**
 - **GT 730**
 - **GTX 750/750 Ti**
-- Other legacy NVIDIA cards from 600-900 series
+- Other legacy NVIDIA cards from 400-1000 series
 
 ## System Requirements
 
 - **OS**: Windows 10/11 (64-bit)
 - **CPU**: Any without integrated graphics OR integrated graphics disabled
-- **RAM**: 8GB minimum
 - **PSU**: Sufficient power for both cards
 - **Motherboard**: Multiple PCIe slots
 
@@ -142,13 +141,6 @@ This custom NVIDIA 390x driver enables simultaneous operation of P106-100 mining
 
 ## Advanced Configuration
 
-### For Mining
-```
-Set P106-100 as primary compute device
-GT 610 handles display only
-Power limit P106-100 to 80% for stability
-```
-
 ### For CUDA Development
 ```
 Install CUDA toolkit
@@ -172,7 +164,7 @@ Add DWORD: EnableMSHybrid = 0
    - NVIDIA: Prefer Maximum Performance
 
 2. **Memory Management**
-   - 16GB RAM recommended for dual-GPU setup
+   - 8 GB RAM recommended for dual-GPU setup
    - Monitor GPU memory usage
 
 3. **Cooling**
@@ -188,7 +180,6 @@ Add DWORD: EnableMSHybrid = 0
 - P106-100 6GB + GTX 750 Ti 2GB
 
 ### Software Compatibility
-- **Mining**: Nicehash, Phoenix Miner, T-Rex
 - **CUDA**: CUDA 11.x and older
 - **Games**: Limited (use GT 610 for display)
 - **Rendering**: Blender, DaVinci Resolve
